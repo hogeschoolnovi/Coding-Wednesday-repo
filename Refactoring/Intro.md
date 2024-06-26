@@ -28,3 +28,7 @@ zoals configuratiewaarden of specifieke limieten.
 
 Deze praktijken helpen bij het creëren van een codebasis die niet alleen functioneel is maar ook aanpasbaar en
 toekomstbestendig.
+
+- [Java](Refactor%20challenge%20-%20JAVA.md)
+- [react](Refactor%20challenge%20-%20React.md)
+- [JavaScript](Refactor%20challenge%20-%20Javascript.md)
