@@ -35,7 +35,13 @@
         1. Refactor de `Invoice` component door verschillende delen naar afzonderlijke componenten te verplaatsen.
         2. Gebruik *Extract Method* in IntelliJ IDEA.
 
-    - **Oplossing:**
+
+**Oplossing:**
+
+<details>
+<summary>Klik hier</summary>
+
+
    ```javascript
    import React from 'react';
 
@@ -74,6 +80,8 @@
 
    export default Invoice;
    ```
+</details>
+
 
 3. **Code Smells (10 minuten)**
     - **Wat zijn Code Smells?**
@@ -117,8 +125,13 @@
         2. Gebruik *Extract Class* en *Move Method* in IntelliJ IDEA.
         3. Refactor de `Customer` klasse om samen te werken met `OrderHistory`.
 
-    - **Oplossing:**
-   ```javascript
+
+**Oplossing:**
+
+<details>
+<summary>Klik hier</summary>
+
+```javascript
    class Customer {
        constructor(name, address, phoneNumber, orders) {
            this.name = name;
@@ -159,6 +172,7 @@
        }
    }
    ```
+</details>
 
 5. **Break (10 minuten)**
 
@@ -183,7 +197,13 @@
         1. Gebruik *Inline Method* om `applyDiscount` samen te voegen met `getDiscountedPrice`.
         2. Gebruik *Rename Refactoring* om `price` te hernoemen naar `originalPrice`.
 
-    - **Oplossing:**
+
+**Oplossing:**
+
+<details>
+<summary>Klik hier</summary>
+
+
    ```javascript
    class Product {
        constructor(originalPrice) {
@@ -195,6 +215,7 @@
        }
    }
    ```
+</details>
 
 7. **Theorie: Refactoring Tools in IntelliJ IDEA (10 minuten)**
     - **Overzicht van Refactoring Tools:**
@@ -250,8 +271,13 @@
         2. Verplaats de filtermethoden naar `BookFilter`.
         3. Pas de `Library` klasse aan om `BookFilter` te gebruiken.
 
-    - **Oplossing:**
-   ```javascript
+
+**Oplossing:**
+
+<details>
+<summary>Klik hier</summary>
+
+```javascript
    class Library {
        constructor(books) {
            this.books = books;
@@ -297,6 +323,7 @@
        }
    }
    ```
+</details>
 
 ### Nuttige links en documentatie
 - [Refactoring in IntelliJ IDEA](https://www.jetbrains.com/help/idea/refactoring-source-code.html)
