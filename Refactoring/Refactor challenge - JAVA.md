@@ -33,6 +33,38 @@
         - Zorg dat er minimaal aantal duplicate code is.
         - Zorg dat je makkelijk de System.out.println kan vervangen door een andere print mogelijkheid.
             - tip: er mag maar 1 keer System.out.println in de code staan
+**Hints**
+
+<details>
+<summary>klik hier voor een stappenplan</summary>
+
+1. **Extract Method**:
+   - Maak aparte methoden voor de header, klantgegevens en footer.
+
+2. **Header Methode**:
+   - Maak een `printHeader()` methode.
+   - Voeg `print("Invoice")` en `printHorizontalLine()` toe aan deze methode.
+
+3. **Horizontale Lijn Methode**:
+   - Maak een `printHorizontalLine()` methode.
+   - Voeg `print("----------------------")` toe aan deze methode.
+
+4. **Klantgegevens Methode**:
+   - Maak een `printCustomerDetails(String customerName, double amount)` methode.
+   - Verplaats `print("Customer: " + customerName)`, `print("Amount: " + amount)` en `printHorizontalLine()` naar deze methode.
+
+5. **Footer Methode**:
+   - Maak een `printFooter()` methode.
+   - Voeg `print("Thank you for your business!")` toe aan deze methode.
+
+6. **Print Methode**:
+   - Maak een `print(String text)` methode.
+   - Verplaats `System.out.println(text)` naar deze methode.
+
+7. **Pas de hoofdmethoden aan**:
+   - Pas `printInvoice()` aan om de nieuwe methoden aan te roepen: `printHeader()`, `printCustomerDetails(customerName, amount)`, en `printFooter()`.
+
+</details>
           
 **Oplossing:**
    
@@ -261,6 +293,40 @@ misschien beter in de Order klasse of een klasse die Order collecties beheert, g
         3. Gebruik *Extract methods* om de if conditie in een methode te zetten. Ctrl+Alt+Shift+T (Windows/Linux) of
            Ctrl+T (Mac)
 
+**Hints**
+
+<details>
+<summary>Klik hier</summary>
+
+### Stappenplan voor refactoren
+
+1. **Extract Method voor Validatie**:
+   - Maak aparte methoden voor de validatie van niet-nul objecten, gebruikersnaam, wachtwoord, URL, en URL-protocol.
+
+2. **Controleren op Niet-Null**:
+   - Maak een `isValidNotNull(Object obj)` methode.
+   - Verplaats de check `config != null` naar deze methode.
+
+3. **Validatie van Gebruikersnaam**:
+   - Maak een `isValidUsername(String username)` methode.
+   - Verplaats de checks `config.getUsername() != null` en `!config.getUsername().isEmpty()` naar deze methode.
+
+4. **Validatie van Wachtwoord**:
+   - Maak een `isValidPassword(String password)` methode.
+   - Verplaats de checks `config.getPassword() != null` en `!config.getPassword().isEmpty()` naar deze methode.
+
+5. **Validatie van URL**:
+   - Maak een `isValidUrl(String url)` methode.
+   - Verplaats de checks `config.getUrl() != null` en `!config.getUrl().isEmpty()` naar deze methode.
+
+6. **Validatie van URL Protocol**:
+   - Maak een `isValidUrlProtocol(String url)` methode.
+   - Verplaats de check `config.getUrl().startsWith("http")` naar deze methode.
+
+7. **Pas de validateConfiguration Methode aan**:
+   - Pas de `validateConfiguration(Config config)` methode aan om de nieuwe validatiemethoden aan te roepen.
+   - Verplaats de juiste foutmeldingen naar de relevante if-voorwaarden binnen de hoofd validatie methode.
+</details>
 
 **Oplossing:**
 
