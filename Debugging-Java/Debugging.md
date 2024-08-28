@@ -290,7 +290,7 @@ int code3 = 0;
     public static void revealSecretWord(String code1, String code2, int code3) {
         int shift1 = code1.charAt(0) - 'A';
         int shift2 = code2.charAt(4) - 'V';
-        int shift3 = code3 % 10;
+        int shift3 = 1;
         int totalShift = (shift1 + shift2 + shift3) % 26;
 
         String encryptedWord = "Ovlyh ola pz jvkpun dlkulzkhf!";
