@@ -127,7 +127,7 @@ public class ConcurrentModificationExample {
         names.add("Charlie");
 
         for (String name : names) {
-            if (name.equals("Bob")) {
+            if (name.equals("Alice")) {
                 names.remove(name);
             }
         }
