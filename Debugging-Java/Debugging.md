@@ -74,6 +74,7 @@ De Calendar.MONTH gebruikt een null teller. Dus Jan is maand 0, je zou dus eigen
 ```
 int maand = calendar.get(Calendar.MONTH) + 1; // Maanden zijn 0-gebaseerd in Calendar
 ```
+</details>
 
 ### **Oefening 2: Debuggen met Step Over en Step Into**
 
@@ -215,7 +216,7 @@ private static int convertToInt(String input) {
 }
 ```
 
-
+</details>
 
 
 ### **Oefening 5: Debuggen met een conditional Breakpoint**
@@ -299,21 +300,9 @@ private static int calculateResult(int a, int b) {
     return result;
 }
 ```
-
-**Reflectie:**
-- **Conditional Breakpoint:** Door een conditional breakpoint in te stellen, kun je de fout isoleren zonder door alle iteraties te stappen. Dit is vooral nuttig in situaties waarin de fout alleen onder specifieke omstandigheden optreedt.
-- **Oplossen van de fout:** Door een if-statement toe te voegen, kun je ervoor zorgen dat de foutieve situatie wordt afgehandeld voordat de deling plaatsvindt.
-
-Deze oefening leert je hoe je gericht kunt debuggen en hoe je subtiele fouten kunt opsporen en oplossen.
 </details>
 
-
-
-
-
-
-
-**Fun challenge - Kraak de kluis**
+### **Fun challenge - Kraak de kluis**
 
 - wie kan als eerste het geheime woord vinden?
 
@@ -453,4 +442,4 @@ class DebugSafe {
 - [Debugger Basics in IntelliJ IDEA](https://www.jetbrains.com/help/idea/debugging-your-first-java-application.html)
 - [Breakpoints in IntelliJ IDEA](https://www.jetbrains.com/help/idea/using-breakpoints.html)
 
-Veel succes met de debugging challenge en leer vooral veel!
+Veel succes met de debugging challenge en oefen vooral veel!
